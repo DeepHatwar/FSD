@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership Registration</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: #e9ecef; /* Page background color */
+            padding-top: 60px;
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font to body */
+        }
+        .form-header {
+            background-color: #004085; /* Form header color */
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font to form header */
+        }
+        .container {
+            max-width: 800px;
+        }
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font to headings */
+        }
+        p {
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font to paragraphs */
+        }
+        .navbar, footer {
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font to navbar and footer */
+        }
+        .btn-primary {
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font to buttons */
+        }
+        .list-group-item, .table {
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font to list and table items */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">GymSite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Classes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trainers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Top Image -->
+    <div class="container mt-5">
+        <img src="5678.jpg" alt="Gym Top Image" class="img-fluid rounded mb-4">
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <!-- Description Section -->
+        <section class="mb-5">
+            <h1 class="text-center">Welcome to GymSite</h1>
+            <p class="text-center">At GymSite, we offer state-of-the-art fitness facilities and a range of classes to help you achieve your fitness goals. Whether you're looking for personal training, group classes, or just a place to work out, we have everything you need. Our professional trainers are here to guide and support you every step of the way.</p>
+            <p class="text-center">Join us today and become a part of our vibrant fitness community. We offer various membership plans tailored to fit your needs and preferences. Explore our classes and meet our trainers to get started on your fitness journey!</p>
+        </section>
+
+        <!-- Gym Membership Registration Form -->
+        <div class="form-header text-center mb-4">
+            <h2>Gym Membership Registration</h2>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="memberName">Full Name</label>
+                <input type="text" class="form-control" id="memberName" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="membershipType">Membership Type</label>
+                <select class="form-control" id="membershipType">
+                    <option>Basic Membership</option>
+                    <option>Premium Membership</option>
+                    <option>VIP Membership</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label><br>
+                <input type="radio" name="gender" id="male" value="male"> Male
+                <input type="radio" name="gender" id="female" value="female"> Female
+            </div>
+            <div class="form-group">
+                <label for="profilePic">Upload Profile Picture</label>
+                <input type="file" class="form-control-file" id="profilePic">
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+
+    <!-- Additional Content: Classes, Trainers, Images, Links -->
+    <div class="container mt-5">
+        <!-- Classes List -->
+        <h3>Available Classes</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Yoga</li>
+            <li class="list-group-item">Pilates</li>
+            <li class="list-group-item">Spinning</li>
+            <li class="list-group-item">HIIT</li>
+        </ul>
+
+        <!-- Trainers -->
+        <h3 class="mt-5">Meet Our Trainers</h3>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Trainer</th>
+                    <th>Specialty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Amit Sharma</td>
+                    <td>Personal Trainer</td>
+                </tr>
+                <tr>
+                    <td>Priya Patel</td>
+                    <td>Yoga Instructor</td>
+                </tr>
+                <tr>
+                    <td>Neha Gupta</td>
+                    <td>Spinning Coach</td>
+                </tr>
+                <tr>
+                    <td>Ravi Kumar</td>
+                    <td>HIIT Specialist</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Gym Images -->
+        <h3 class="mt-5">Gym Facilities</h3>
+        <img src="1234.jpg" alt="Gym Facilities" class="img-fluid rounded">
+
+        <!-- Links -->
+        <p class="mt-3">For more information, visit our <a href="#" target="_blank">official website</a>.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-4 bg-dark text-white">
+        &copy; 2024 GymSite. All rights reserved.
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
